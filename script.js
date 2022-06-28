@@ -120,3 +120,14 @@ const combinedAge = ages
   .reduce((sum, age) => sum + age, 0);
 
 console.log(combinedAge);
+
+const numbers = [49, 90, 87, 5, 0, 12, 89, 45];
+
+// find() => returns first value which satisfies a given condition
+console.log(numbers.find(age => age > 40));
+console.log(numbers.find(age => age < 40));
+
+// findIndex => returns index of first value which satisfies a given condition
+console.log(numbers.findIndex(age => age > 40));
+console.log(numbers.findIndex(age => age > 50));
+console.log(numbers.findIndex(age => age < 10));
